@@ -43,6 +43,6 @@ void printStruct(struct food example) {
 }
 
 void modifyStruct(struct food *input, char newName[256], int newPrice) {
-  strcpy((*input).name, newName);
-  (*input).price = newPrice;
+  strcpy(input -> name, newName);
+  input -> price = newPrice;
 }
